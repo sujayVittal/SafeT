@@ -2,6 +2,7 @@ package com.example.safet;
 
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.SmsManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -49,7 +50,7 @@ public class Choice extends ActionBarActivity {
 				Intent i = new Intent(Intent.ACTION_VIEW);
 		    	i.setType("vnd.android-dir/mms-sms");
 		    	SmsManager smsManager = SmsManager.getDefault();
-		    	smsManager.sendTextMessage("phoneNo", number, message, null, null);
+		    	smsManager.sendTextMessage(number, null, "Hi. I am in danger. Help me. Otherwise, You might not be able to see me ever again. Please help me.", null, null);
 			}
 		});
 		

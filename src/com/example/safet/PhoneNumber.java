@@ -91,7 +91,7 @@ public class PhoneNumber extends Activity implements  OnItemClickListener, OnIte
 				}
 		        else
 		        {
-		        	Toast.makeText(getBaseContext(), NameSel+" : "+toNumberValue,
+		        	Toast.makeText(getBaseContext(), NameSel+" : "+ToNumber,
 								Toast.LENGTH_LONG).show();
 		        	//editText.setText(NameSel);
 		        	Intent i = new Intent(PhoneNumber.this, Choice.class);
