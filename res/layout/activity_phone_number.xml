@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#600000" >
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Contact"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <AutoCompleteTextView
+            android:id="@+id/toNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            android:width="250dip" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="2dip" >
+    </TableRow>
+
+    <Button
+        android:id="@+id/Send"
+        android:clickable="true"
+        android:text="@string/add"
+        android:textColor="#FFFFFF"
+        android:width="86dip" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.27"
+        android:ems="10"
+        android:textSize="26sp"
+        android:textColor="#FFFFFF" >
+
+        <requestFocus />
+    </EditText>
+
+</TableLayout>
